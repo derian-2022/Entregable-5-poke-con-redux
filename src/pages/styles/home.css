@@ -1,0 +1,112 @@
+.poke__home {
+    padding: 2rem;
+}
+
+.poke__home-img {
+    max-width: 500px;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poke__home-title {
+    color: red;
+    text-align: center;
+    margin-bottom: 0.1em;
+    font-size: 1.8em;
+}
+
+.poke__home-paragraph {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.poke__home-form {
+    display: flex;
+    justify-content: center;
+}
+
+.poke__home-inp {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em 0 0 0.5em;
+    border: none;
+    box-shadow: 0 0.1em 0.3em #0006;
+}
+
+.poke__home-btn {
+    font-size: 1rem;
+    padding: 0.5em 2em;
+    box-shadow: 0 0.1em 0.3em #0003;
+    background-color: #D93F3F;
+    border-radius: 0 0.5em 0.5em 0;
+    color: white;
+    cursor: pointer;
+    transition: filter 50ms ease;
+}
+
+.poke__home-btn:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0.2em 0.4em #0005;
+}
+
+@media screen and (min-width: 720px) {
+    .poke__home-title {
+        font-size: 2.5rem;
+    }
+    .poke__home-paragraph,
+    .poke__home-inp,
+    .poke__home-btn {
+        font-size: 1.2rem;
+    }
+} 
+
+.poke__home-elip3 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 117px;
+    height: 117px;
+    left: 662px;
+    top: 914px;
+    background: #FFFFFF;
+    border: 12px solid #000000;
+}
+
+.poke__home-elip4 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 689px;
+    top: 941px;
+    background: #212121;
+    border: 12px solid #000000; 
+}
+
+.poke__home-img147 {
+    position: absolute;
+    width: 1440px;
+    height: 123.18px;
+    left: 0px;
+    top: 870px;
+    background: #DD1A1A;
+}
+
+.poke__home-img148 {
+    position: absolute;
+    width: 1440px;
+    height: 69px;
+    left: 0px;
+    top: 962px;
+    background: #0C0C0C;
+}
+
+.footer {
+    height: 100px;
+    position: relative;
+    margin-bottom: 2.5em;
+}
