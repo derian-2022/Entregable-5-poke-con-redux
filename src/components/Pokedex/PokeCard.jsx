@@ -18,11 +18,12 @@ const PokeCard = ({ pokemon }) => {
     navigate(`/pokedex/${poke.id}`)
   };
 
+  console.log(pokemon)
+
   return (
     <article
-      onClick={handleClick}
-      className={`card border-${poke?.types[0].type.name}`}
-    >
+      onClick={handleClick}className={`card border-${poke?.types[0].type.name}`}>
+    
       <header className={`card__header bg-${poke?.types[0].type.name}`}>
         <img
           className="card__avatar"

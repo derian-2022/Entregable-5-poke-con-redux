@@ -7,27 +7,27 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/shared/Header";
 import SelecTypes from "../components/Pokedex/SelecTypes";
 
-
 const Pokedex = () => {
   const { nameTrainer } = useSelector((state) => state);
 
   const [pokemons, setPokemons] = useState();
-  const [selecValue, setSelecValue] = useState('allpokemons')
+  const [selecValue, setSelecValue] = useState("allpokemons");
 
   useEffect(() => {
-    if(selecValue === 'allpokemons') {
-      const url = "https://pokeapi.co/api/v2/pokemon?limit=10&offset=0";
-    axios
-      .get(url)
-      .then((res) => setPokemons(res.data))
-      .catch((err) => console.log(err));
+    if (selecValue === "allpokemons") {
+      const url = "https://pokeapi.co/api/v2/pokemon?limit=50&offset=0";
+      axios
+        .get(url)
+        .then((res) => setPokemons(res.data))
+        .catch((err) => console.log(err));
     } else {
-      axios.get(selecValue)
-      .then(res => {
-        const results = res.data.pokemon.map(e => e.pokemon)
-        setPokemons({results})
-      })
-      .catch(err => console.log(err))
+      axios
+        .get(selecValue)
+        .then((res) => {
+          const results = res.data.pokemon.map((e) => e.pokemon);
+          setPokemons({ results });
+        })
+        .catch((err) => console.log(err));
     }
   }, [selecValue]);
 
@@ -42,16 +42,18 @@ const Pokedex = () => {
 
   return (
     <div className="pokedex">
-        <Header />
+      <Header />
       <h1 className="pokedex__title">
-        <span className="pokedex__title-name">Hi {nameTrainer}</span>, here
-        find your favorite pokemon.
+        <span className="pokedex__title-name">Hi {nameTrainer}</span>, here find
+        your favorite pokemon.
       </h1>
-      <form onSubmit={handleSubmit}>
-        <input id="pokemon" type="text" />
-        <button>Search</button>
-      </form>
-        <SelecTypes setSelecValue={setSelecValue} />
+      <div>
+        <form className="pokedex__form" onSubmit={handleSubmit}>
+          <input className="pokedex__input" id="pokemon" type="text" />
+          <button className="pokedex__btn">Search</button>
+          <p className="pokedex__selec"><SelecTypes setSelecValue={setSelecValue} /></p>
+        </form>
+      </div>
       <div className="pokedex__container-pokemon">
         {pokemons?.results.map((pokemon) => (
           <PokeCard key={pokemon.url} pokemon={pokemon} />

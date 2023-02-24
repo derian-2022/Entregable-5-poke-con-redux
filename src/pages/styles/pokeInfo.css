@@ -1,0 +1,283 @@
+.pokeInfo__err {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30em; 
+    background-image: linear-gradient(177.56deg, #62DB60 -58.92%, #65d429 16.57%, #154a14 209.53%);
+}
+
+.pokeInfo__tex {
+    padding: 3rem;
+    font-size: 2.5em;
+
+}
+
+.pokeInfo__err-img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    aspect-ratio: 1.3;
+    border-radius: 50%;
+    box-shadow: 0 0 2.9em #ce02ce;
+}
+
+            /*ERROR/
+/*-----------------------------------*/
+
+.pokeInfo {
+    background-image: url(/pokemon.webp);
+}
+
+.pokeInfo__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    padding: 4em;
+    min-width: 1800px;
+    height: 2425.82px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}  
+
+
+.pokeInfo__card-info {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 1116px;
+    height: 1272px;
+    left: 162px;
+    top: 320px;
+}
+
+.pokeInfo__color {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.bg-grass {
+    background-image: linear-gradient(178.92deg,#257a14 .92%,#53bb48 47.96%,#86d86c 99.08%);
+}
+
+.pokeInfo__avatar {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 30px;
+}
+
+.pokeInfo__number {
+    display: flex;
+    align-self: center;
+    font-size: 3rem;
+    width: fit-content;
+    padding: 5rem;
+}
+
+.pokeInfo__name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.pokeInfo__name color {
+    text-transform: capitalize; 
+}
+
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold  
+}
+
+.pokeInfo__measures-height-weight {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeInfo__height-weight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeInfo__type-abilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pokeInfo__type {
+    width: 410px;
+    height: 43px;
+}
+
+.type {
+    padding: 0.7rem;
+    font-size: 1.5em;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight: 600;
+    line-height: 29px;
+    text-transform: capitalize;
+    width: 207px;
+}
+
+
+.pokeInfo__ability {
+    display: flex;
+    gap: 1rem;
+}
+
+.ability {
+    padding: 0.7rem;
+    max-width: 100%;
+    height: fit-content;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pokeInfo__titleH {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+}
+
+.pokeInfo__titleS {
+    text-align: center;
+    margin-bottom: 99px;
+    margin-left: 2em;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.pokeInfo__stats {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pokeInfo__tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text_stat {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600; 
+}
+
+.text_stat span {
+    font-size: 1.5em;
+}
+
+.bar__stats {
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bar__stats {
+    width: 80%;
+}
+
+.pokeInfo__movement {
+    box-shadow: 1px 1px 5px #000;
+    padding: 4rem;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    width: 1116px;
+    height: 722px;
+    left: 166px;
+    top: 1657px;
+    
+    
+}
+
+.container__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+}
+
+/* .pokeInfo__title {
+    font-size: 24px;
+} */
+
+.pokeInfo__moveMent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.moveMent {
+    background-color: #d4d4d4;
+    border-radius: .3em;
+
+}

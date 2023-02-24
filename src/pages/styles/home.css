@@ -1,26 +1,32 @@
-.poke__home {
-    padding: 2rem;
-}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    gap: 1rem;
+} 
 
 .poke__home-img {
-    max-width: 500px;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    position: inherit;
+    height: 121px; 
 }
 
 .poke__home-title {
-    color: red;
+    color: #fe1936;
+    font-size: 45px;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 0.1em;
-    font-size: 1.8em;
 }
 
 .poke__home-paragraph {
-    font-size: 1em;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
+
 
 .poke__home-form {
     display: flex;
@@ -30,18 +36,20 @@
 .poke__home-inp {
     width: 100%;
     max-width: 300px;
-    font-size: 1rem;
+    height: 3em;
+    font-size: 1.2rem;
     font-weight: 300;
     padding: 0.5em 0.8em;
     border-radius: 0.5em 0 0 0.5em;
     border: none;
-    box-shadow: 0 0.1em 0.3em #0006;
+    box-shadow: 0 0.1em 0.3em #0007;
 }
 
 .poke__home-btn {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    height: 3em;
     padding: 0.5em 2em;
-    box-shadow: 0 0.1em 0.3em #0003;
+    box-shadow: 0 0.1em 0.3em #0004;
     background-color: #D93F3F;
     border-radius: 0 0.5em 0.5em 0;
     color: white;
@@ -54,7 +62,7 @@
     box-shadow: 0 0.2em 0.4em #0005;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
     .poke__home-title {
         font-size: 2.5rem;
     }
@@ -65,48 +73,8 @@
     }
 } 
 
-.poke__home-elip3 {
-    box-sizing: border-box;
+.footer{
     position: absolute;
-    width: 117px;
-    height: 117px;
-    left: 662px;
-    top: 914px;
-    background: #FFFFFF;
-    border: 12px solid #000000;
-}
-
-.poke__home-elip4 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 63px;
-    height: 63px;
-    left: 689px;
-    top: 941px;
-    background: #212121;
-    border: 12px solid #000000; 
-}
-
-.poke__home-img147 {
-    position: absolute;
-    width: 1440px;
-    height: 123.18px;
-    left: 0px;
-    top: 870px;
-    background: #DD1A1A;
-}
-
-.poke__home-img148 {
-    position: absolute;
-    width: 1440px;
-    height: 69px;
-    left: 0px;
-    top: 962px;
-    background: #0C0C0C;
-}
-
-.footer {
-    height: 100px;
-    position: relative;
-    margin-bottom: 2.5em;
+    width: 100%;
+    bottom: 0; 
 }
